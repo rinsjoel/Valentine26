@@ -28,17 +28,27 @@ setInterval(()=>{
 },300);
 
 /* runaway button */
-noBtn.onmouseover=()=>{
+noBtn.onmouseover = () => {
+  startMusic();
   noBtn.style.position="absolute";
   noBtn.style.left=Math.random()*80+"%";
   noBtn.style.top=Math.random()*80+"%";
 };
 
 /* success */
-yesBtn.onclick=()=>{
-  document.body.innerHTML = `
-    <div style="height:100vh;display:flex;justify-content:center;align-items:center;font-family:system-ui">
-      <h1>Yay! ❤️</h1>
+const container = document.querySelector(".container");
+
+yesBtn.onclick = () => {
+  startMusic();
+  container.innerHTML = `
+    <div class="success">
+      <h1>Too late 😮‍💨<br>You're mine now 😼❤️</h1>
     </div>
   `;
 };
+
+bgm.volume = 0.4;
+
+function startMusic() {
+  bgm.play().catch(() => {});
+}
