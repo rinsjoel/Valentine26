@@ -1,0 +1,45 @@
+body{
+  margin:0;
+  height:100vh;
+  overflow:hidden;
+  font-family:system-ui;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#ffb6c1,#ffe6ee);
+  text-align:center;
+}
+
+h1{
+  font-size:52px;
+  color:#7a0045;
+}
+
+button{
+  font-size:20px;
+  padding:14px 36px;
+  border:none;
+  border-radius:40px;
+  margin:8px;
+  cursor:pointer;
+}
+
+.yes{ background:#ff4d88; color:white; }
+.no{ background:white; }
+
+.heart{
+  position:fixed;
+  bottom:-20px;
+  animation:float 6s linear infinite;
+}
+
+@keyframes float{
+  to{ transform:translateY(-110vh); opacity:0; }
+}
+
+/* fake complex looking stuff for BTS */
+.physics-engine{}
+.renderer{}
+.particle-system{}
+.layer-1{}
+.layer-2{} 
