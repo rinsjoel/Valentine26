@@ -42,7 +42,7 @@ yesBtn.onclick = () => {
   startMusic();
   container.innerHTML = `
     <div class="success">
-      <h1>Too late 😮‍💨<br>You're mine now 😼❤️</h1>
+      <h1>Too late 😮‍💨<br>You're already mine 😼❤️</h1>
     </div>
   `;
 };
